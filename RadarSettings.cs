@@ -53,6 +53,9 @@ public class PathfindingSettings
     [ConditionalDisplay(nameof(ShowAllTargets))]
     public RangeNode<int> MaxTargetNameCount { get; set; } = new RangeNode<int>(10, 1, 100);
 
+    [ConditionalDisplay(nameof(ShowAllTargets))]
+    public ToggleNode ShowFullPath { get; set; } = new ToggleNode(false);
+
     public ToggleNode IncludeTilePathsAsTargets { get; set; } = new ToggleNode(true);
     public ToggleNode ShowSelectedTargets { get; set; } = new ToggleNode(true);
     public ToggleNode EnableTargetNameBackground { get; set; } = new ToggleNode(true);

@@ -55,7 +55,7 @@
     {
       "Name": "block",
       "ExpectedCount": 1,
-      "DisplayName": "Area Transitions"
+      "DisplayName": "区域切换"
     }
   ],
   "1_1_2": [
@@ -176,7 +176,7 @@
     {
       "Name": "entrancedown",
       "ExpectedCount": 2,
-      "DisplayName": "Area Transition"
+      "DisplayName": "区域切换"
     }
   ],
   "1_1_8": [
@@ -461,7 +461,7 @@
     {
       "Name": "exit",
       "ExpectedCount": 2,
-      "DisplayName": "Area Transition"
+      "DisplayName": "区域切换"
     },
     {
       "Name": "boss",
@@ -863,7 +863,7 @@
     {
       "Name": "entranceup",
       "ExpectedCount": 2,
-      "DisplayName": "Area Transition"
+      "DisplayName": "区域切换"
     },
     {
       "Name": "entrancedown",
@@ -945,14 +945,14 @@
     {
       "Name": "entrance",
       "ExpectedCount": 2,
-      "DisplayName": "Area Transition"
+      "DisplayName": "区域切换"
     }
   ],
   "1_4_6_2": [
     {
       "Name": "entrance",
       "ExpectedCount": 2,
-      "DisplayName": "Area Transition"
+      "DisplayName": "区域切换"
     },
     {
       "Name": "onewaydoor",
@@ -1021,6 +1021,11 @@
       "Name": "ddclosed",
       "ExpectedCount": 1,
       "DisplayName": "Miasmeter"
+    },
+    {
+      "Name": "bossdoor",
+      "ExpectedCount": 1,
+      "DisplayName": "Unique Monster"
     }
   ],
   "1_5_3b": [
@@ -1076,7 +1081,7 @@
   ],
   "1_5_6": [
     {
-      "Name": "secretpassage",
+      "Name": "quest",
       "ExpectedCount": 1,
       "DisplayName": "Quest Item"
     },
@@ -1244,7 +1249,7 @@
     },
     {
       "Name": "tunnel",
-      "ExpectedCount": 1,
+      "ExpectedCount": 2,
       "DisplayName": "The Western Forest"
     },
     {
@@ -1388,7 +1393,7 @@
     {
       "Name": "LabyrinthDoor",
       "ExpectedCount": 1,
-      "DisplayName": "Trial of Ascendency"
+      "DisplayName": "升华试炼"
     },
     {
       "Name": "sarcophigusentrance",
@@ -1399,6 +1404,11 @@
       "Name": "entrancebook",
       "ExpectedCount": 1,
       "DisplayName": "Stairs"
+    },
+    {
+      "Name": "scriptorium_crevice_corner_concave_v01_01",
+      "ExpectedCount": 1,
+      "DisplayName": "Quest Map"
     }
   ],
   "2_7_5_1": [
@@ -1614,7 +1624,7 @@
       "DisplayName": "Resurrection Site / The Grain Gate"
     },
     {
-      "Name": "A",
+      "Name": "pillar",
       "ExpectedCount": 1,
       "DisplayName": "Quest item"
     }
@@ -1851,6 +1861,11 @@
       "Name": "tunnel",
       "ExpectedCount": 1,
       "DisplayName": "The Tunnel"
+    },
+    {
+      "Name": "gap",
+      "ExpectedCount": 1,
+      "DisplayName": "Quest Item"
     }
   ],
   "2_9_6": [
@@ -2052,6 +2067,13 @@
       "DisplayName": "Vilenta Arena"
     }
   ],
+  "2_10_8": [
+    {
+      "Name": "areatransition",
+      "ExpectedCount": 1,
+      "DisplayName": "Exit"
+    }
+  ],
   "2_10_5": [
     {
       "Name": "transition",
@@ -2085,7 +2107,7 @@
   ],
   "1_1_4_0": [
     {
-      "Name": "forcedblank",
+      "Name": "brokenbridge",
       "ExpectedCount": 1,
       "DisplayName": "Unique Monster"
     }
@@ -2117,7 +2139,7 @@
   "*_Labyrinth_*": [
     {
       "Name": "entry",
-      "ExpectedCount": 3,
+      "ExpectedCount": 4,
       "DisplayName": "Exit"
     },
     {
@@ -2146,9 +2168,19 @@
       "DisplayName": "Secret door"
     },
     {
+      "Name": "sliding",
+      "ExpectedCount": 1,
+      "DisplayName": "Secret door"
+    },
+    {
       "Name": "hidden",
       "ExpectedCount": 1,
       "DisplayName": "Secret door"
+    },
+    {
+      "Name": "largegate",
+      "ExpectedCount": 1,
+      "DisplayName": "Key door"
     }
   ],
   "Sanctum*": [
@@ -2205,6 +2237,109 @@
       "ExpectedCount": 10,
       "DisplayName": "Escape route",
       "TargetType": "Entity"
+    }
+  ],
+  "MapWorlds*": [
+    {
+      "Name": "exit",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    },
+    {
+      "Name": "boss_gate",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsCrimsonTownship": [
+    {
+      "Name": "03",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsPeninsula": [
+    {
+      "Name": "transition",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsBazaar": [
+    {
+      "Name": "prison",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsGardens": [
+    {
+      "Name": "entrance",
+      "ExpectedCount": 3,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsVaalPyramid": [
+    {
+      "Name": "stairsup",
+      "ExpectedCount": 3,
+      "DisplayName": "Stairs Up"
+    }
+  ],
+  "MapWorldsCourtyard": [
+    {
+      "Name": "transition",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsArsenal": [
+    {
+      "Name": "marketentrance",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsScriptorium": [
+    {
+      "Name": "entrancebook",
+      "ExpectedCount": 2,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsSiege": [
+    {
+      "Name": "transition",
+      "ExpectedCount": 2,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsDarkForest": [
+    {
+      "Name": "groveentrance",
+      "ExpectedCount": 2,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsDesertSpring": [
+    {
+      "Name": "rockwalltransition",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsTempleUnique": [
+    {
+      "Name": "Metadata/Terrain/Temple/Bloodpool/templeclean_bloodpool_corners_v01_01.tdt",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
+    }
+  ],
+  "MapWorldsAtollUnique": [
+    {
+      "Name": "caveentrance",
+      "ExpectedCount": 1,
+      "DisplayName": "Boss"
     }
   ]
 }

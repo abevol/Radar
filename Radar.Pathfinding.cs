@@ -57,6 +57,7 @@ public partial class Radar
     private void AddRoute(Vector2 target, TargetDescription targetDescription, Entity entity)
     {
         var color = _getColor();
+        color.A = Settings.PathfindingSettings.DefaultMapPathColor.Value.A;
 
         Color GetWorldColor() => Settings.PathfindingSettings.WorldPathSettings.UseRainbowColorsForPaths
             ? color

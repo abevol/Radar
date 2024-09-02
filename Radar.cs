@@ -329,7 +329,10 @@ public partial class Radar : BaseSettingsPlugin<RadarSettings>
                     (regex?.IsMatch(t) ?? true) &&
                     _allTargetLocations.GetValueOrDefault(t) is { } list && list.Count <= Settings.PathfindingSettings.MaxTargetNameCount;
 
-                var text = string.Join("\n", texts.Distinct().Where(TargetFilter));
+                var names = texts.Distinct().Where(TargetFilter);
+                if (!Settings.PathfindingSettings.ShowFullPath)
+                    names = names.Select(text => text.Split('/').Last());
+                var text = string.Join("\n", names);
                 var textOffset = Graphics.MeasureText(text) / 2f;
                 var mapDelta = TranslateGridDeltaToMapDelta(location.ToVector2Num() - playerPosition, playerHeight + _heightData[location.Y][location.X]);
                 var mapPos = mapCenter + mapDelta;
